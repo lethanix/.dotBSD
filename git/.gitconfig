@@ -1,0 +1,7 @@
+[safe]
+	directory = /usr/ports
+[init]
+	defaultBranch = main
+[user]
+	email = me@lethanix.com
+	name = Louis

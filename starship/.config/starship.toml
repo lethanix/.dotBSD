@@ -1,0 +1,74 @@
+# Theme
+palette = 'ayu_dark'
+
+# A continuation prompt that displays two filled in arrows
+continuation_prompt = "[](bold fg:#C385FE) "
+
+# format = """$all"""
+# right_format = """$cmd_duration$git_status$git_branch"""
+# format = """$cmd_duration$git_status$git_branch$battery$all""" 
+
+add_newline = false
+
+[[battery.display]]
+threshold = 20
+
+[character] 
+# success_symbol = "[󰊠 ](bold fg:78)"
+success_symbol = "[󰣠 ](bold fg:#E6495A)"
+
+error_symbol = "[ ](bold #C385FE)"
+vicmd_symbol = "[ ](bold string)"
+
+[package]
+disabled = true
+
+[line_break]
+disabled = false
+
+[cmd_duration]
+disabled = true
+min_time = 500
+format = "[󰄉 $duration]($style) "
+
+[git_branch]
+style = "bold #97C142"
+
+[git_status]
+style = "bold #C385FE"
+
+[directory]
+format = "[ $path]($style)[$read_only]($read_only_style) "
+style = "bold #E89D37"
+truncation_length = 2
+truncation_symbol = "…/"
+
+[memory_usage]
+disabled = false
+threshold = 90
+format = "[|](bold cyan) [$symbol ${ram_pct}]($style) "
+symbol = "󰍛"
+style = "bold purple"
+
+[aws]
+symbol = "󰸏 "
+
+[rust]
+format = '[$symbol]($style)'
+
+[palettes.ayu_dark]
+markup = "#f07178"
+operator = "#f29668"
+keyword = "#ff8f40"
+func = "#ffb454" 
+special = "#e6c08a"
+constant = "#d2a6ff"
+string = "#aad94c"
+regexp = "#95e6cb"
+entity = "#59c2ff"
+tag = "#39bae6"
+foreground = "#e6b450" # ?
+comment = "#5c6773"
+cyan = "#95e6cb"
+blue = "#39bae6"
+bg_dim = "#0f1419"
